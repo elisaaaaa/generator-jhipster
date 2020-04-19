@@ -186,7 +186,7 @@
         </table>
     </div>
     <div>
-    	<qr-code [value]="'/<%= entityUrl %>/<%= entityInstance %>.id/view'" [size]="150"></qr-code>
+    	<qr-code [value]="['/<%= entityUrl %>', <%= entityInstance %>.id, 'view']" [size]="150"></qr-code>
     </div>
     <%_ if (pagination === 'pagination') { _%>
 
