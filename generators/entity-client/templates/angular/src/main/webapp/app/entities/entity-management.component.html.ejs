@@ -185,6 +185,12 @@
             </tbody>
         </table>
     </div>
+    <dt>QrCode</dt>
+    <dd>
+    	<div>
+    		<qr-code [value]="'/<%= entityUrl %>/<%= entityInstance %>.id/view'" [size]="150"></qr-code>
+    	</div>
+    </dd>
     <%_ if (pagination === 'pagination') { _%>
 
     <div *ngIf="<%= entityInstancePlural %>?.length > 0">
